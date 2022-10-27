@@ -18,8 +18,6 @@ jobs:
       run: |
         echo "AWS_ROLE_ARN=${{ secrets.AWS_ROLE_ARN }}" >> $GITHUB_ENV
 
-    - name: Checkout
-      uses: actions/checkout@v3
 
     - name: configure AWS credentials
       uses: aws-actions/configure-aws-credentials@v1
